@@ -1,0 +1,27 @@
+/* styles.css */
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .description-field {
+    width: 300px; 
+    height: 100px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust the height to your preference */
+  }
+
+h1 {
+  text-align: center;
+}
+  
+  

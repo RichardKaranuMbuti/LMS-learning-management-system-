@@ -1,0 +1,17 @@
+.rounded-circle-perfect{
+    object-fit: cover;
+	width: 150px;
+	border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+
+.login-bg {
+	background-image: url("/dummy-images/headphones-guy.png");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

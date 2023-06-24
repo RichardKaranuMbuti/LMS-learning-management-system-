@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/index-custom.css">
+	<title>OLMS | Homepage</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-md-top">
+	<div class="container">
+		<a class="navbar-brand" href="#top">LOGO</a>
+		<ul class="navbar-nav ml-auto">
+			<a class="nav-link" href="#features">FEATURES</a>
+			<a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+			<a class="nav-link" href="#contact">CONTACT</a>
+			<a class="nav-link" href="#about_us">ABOUT US</a>
+		</ul>
+		<ul class="navbar-nav ml-auto">
+			<a class="nav-link" href="#signup">JOIN US</a>
+			<a class="nav-link" href="#login">LOGIN</a>
+		</ul>
+	</div>
+</nav>
+
+
+<section id="login-form" class="container-fluid text-center login-bg">
+    <div class="row">
+        <div class="col-md-12  offset-md-11">
+            <div class="card login-card">
+                <div class="card-body">
+                    <h1 class="card-title">Log in to your account</h1>
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="username_phone_number">Username/Phone Number</label>
+                            <input id="username_phone_number" name="username_phone_number" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" class="form-control" required>
+                        </div>
+                        <button class="btn btn-success mt-1" type="submit">Login</button>
+                    </form>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block content %}
+{% endblock %}
+
+<section id="features" class="container m-md-4">
+	<h1 class="text-center">Features</h1>
+	<p>We offer a variety of features here at OLMS</p>
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/dummy-images/43-57feature.png" alt="">
+			<p>Course Management: Simplify course creation, material uploading, and student progress monitoring. Easily organize and deliver course content.</p>
+		</div>
+		<div class="col-md-4">
+			<img src="/dummy-images/44-05feature.png" alt="">
+			<p>User Management: Provide secure user registration, authentication, and access control for students, instructors, and administrators.</p>
+		</div>
+		<div class="col-md-4">
+			<img src="/dummy-images/44-12feature.png" alt="">
+			<p>Content Management: Upload and organize various course materials, making them easily accessible to students.</p>
+		</div>
+		<div class="col-md-4">
+			<img src="/dummy-images/44-15feature.png" alt="">
+			<p>Communication Tools: Include discussion forums, chat rooms, and messaging systems to facilitate interaction and collaboration.</p>
+		</div>
+		<div class="col-md-4">
+			<img src="/dummy-images/44-21feature.png" alt="">
+			<p>Assessment and Grading: Streamline assessment creation, grading, and feedback, allowing instructors to track student performance.</p>
+		</div>
+		<div class="col-md-4">
+				<img src="/dummy-images/44-33feature.png" alt="">
+				<p>Progress Tracking: Offer tools to monitor student attendance, assignment completion, and scores.</p>
+		</div>
+	</div>
+</section>
+
+
+<section id="testimonials" class="text-center">
+	<h1>Testimonials</h1>
+	<div class="card-container d-flex justify-content-center">
+		<div class="card col-md-3 p-md-3 m-5">
+		<p>
+			"I have been using OLMS for my science classes,
+			and it has been a game-changer.
+			The platform's intuitive course management tools
+			allow me to easily organize and deliver course
+			materials. The discussion forums have promoted
+			meaningful student interactions and collaboration
+			beyond the classroom. The analytics feature
+			provides valuable insights into student performance,
+			helping me tailor my teaching approach.
+			OLMS has truly enhanced my teaching experience and
+			transformed the way my students learn."
+		</p>
+		<div class="card-footer">
+			<img class="img-fluid rounded-circle-perfect" src="/dummy-images/test-man.png" alt="">
+			<p class="card-text">Mark Njuki</p>
+			<p class="card-text">High School Science Teacher</p>
+			<p class="card-text">Nairobi High School</p>
+		</div>
+	</div>
+
+	<div class="card col-md-3 p-md-3 m-5">
+		<p>
+			"As a busy college student, OLMS has been a lifesaver.
+			I can access my course materials and participate in
+			discussions on the go, using my smartphone. The platform's
+			user-friendly interface makes navigating through the
+			courses effortless. The assessment and feedback features
+			have provided me with timely and constructive guidance.
+			OLMS has made online learning convenient and engaging,
+			enabling me to excel in my studies."
+		</p>
+		<div class="card-footer">
+			<img class="img-fluid rounded-circle-perfect" src="/dummy-images/test-man-glasses.png" alt="">
+			<p class="card-text">John Mureithi</p>
+			<p class="card-text">College Student</p>
+			<p class="card-text">Central University</p>
+		</div>
+	</div>
+
+	<div class="card col-md-3 p-md-3 m-5">
+		<p>
+			"OLMS has been an invaluable resource for our homeschooling journey.
+			The platform offers a wide range of courses and resources, catering to
+			various subjects and grade levels. The ability to customize learning paths
+			and access comprehensive analytics has allowed me to tailor my child's
+			education to their individual needs. The communication tools have fostered
+			connections with other homeschooling parents, creating a supportive community.
+			OLMS has empowered me to provide a high-quality education for my child in
+			a flexible and enriching way."
+		</p>
+		<div class="card-footer">
+			<img class="img-fluid rounded-circle-perfect" src="/dummy-images/test-smiling-lady.png" alt="">
+			<p class="card-text">Emily Ngunyi</p>
+			<p class="card-text">Homeschooling Parent</p>
+			<p class="card-text">Kisii County</p>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<section id="about_us" class="about">
+	<h1 class="text-center">About Us</h1>
+	<p class="m-md-3">
+		Welcome to our Online Learning Management System (OLMS) - your trusted platform for online education. At OLMS, we revolutionize the way people learn and teach in the digital age.
+		With a user-centric approach, OLMS empowers educators and learners alike. We believe in technology breaking barriers to make quality education accessible to all.
+		Our mission is to provide a comprehensive platform that caters to modern learners. From course management to monitoring progress, we've got you covered.
+		Accessibility is a core value we uphold. OLMS adheres to accessibility standards for all learners.
+		Join us on this journey of lifelong learning and empowerment. Discover the possibilities of online education with OLMS.
+		Together, let's unlock your full potential and shape a brighter future through knowledge and innovation.
+	</p>
+</section>
+
+
+<section id="contact" class="container-fluid mb-4">
+	<div class="row align-items-center justify-content-between">
+		<div class="card m-md-4 col-md-4">
+			<h1 class="card-title text-center">Talk To Us</h1>
+			<form method="post">
+				<div class="form-group">
+					<label for="first_name">First Name</label>
+					<input id="first_name" name="first_name" type="text" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="last_name">Last Name</label>
+					<input id="last_name" name="last_name" type="text" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="phone_number">Phone Number</label>
+					<input id="phone_number" name="phone_number" type="tel" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+				</div>
+				<button class="btn btn-success m-2" type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-6">
+			<img src="/dummy-images/lady-on-laptop.png" alt="" class="img-fluid">
+		</div>
+	</div>
+</section>
+
+</body>
+<footer class="bg-success text-white text-center">
+		<p>&copy 2023 OLMS. All rights reserved.</p>
+		<p>
+			<a href="#">Privacy Policy</a> | 
+			<a href="#">Terms of Service</a> | 
+			<a href="#">Contact Us</a></p>
+	<p>
+		We are committed to protecting your privacy and ensuring the security of your data.
+		Please review our Privacy Policy for more information. By using our platform, you agree to our Terms of Service.
+		If you have any questions or need assistance, feel free to reach out to our dedicated support team.
+		Contact us today to discover how OLMS can transform your online learning experience.
+	</p>
+</footer>
+</html>
